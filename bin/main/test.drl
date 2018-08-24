@@ -1,0 +1,15 @@
+package org.drools.example 
+
+rule "Xyz"
+    ruleflow-grou bla
+when
+    (
+    $p : Pattern( sexoigualmasculino, x>y )  and
+    not( 
+    Bar( a+b==c )   ) ) 
+then
+System.out.println();
+
+end
+
+

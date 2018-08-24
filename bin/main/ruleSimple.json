@@ -1,0 +1,41 @@
+{
+  "regla": {
+    "metadatos": {
+      "codigo": "ITU0001",
+      "tema": "1:ITU o 2:DIabetes",
+      "momento": "conductaAltaPHC",
+      "informacion": "Regla de ITU con diagnosticos y sexo del paciente",
+      "obs_interna": "texto",
+      "autores": "Dr Juan Fernando zapata",
+      "fecha_creacion": "18 de junio - 2018",
+      "referencia": "Guia ITU, revision 2016"
+    },
+    "condiciones": [
+      {
+        "condicion": [
+          {
+            "obs_variable": "sexo",
+            "cod_variable": "2030",
+            "sis_variable": "Concepto",
+            "operador_valor": "igual",
+            "obs_valor": "masculino",
+            "dat_valor": "2045",
+            "sis_valor": "CIE10",
+            "operador_fecha": "notengamenos",
+            "cantidad_dia": "90"
+          }
+        ]
+      }
+    ],
+    "acciones": [
+      {
+        "tipo": "recomendacion",
+        "observacion": "Sospeche ITU complicada, paciente masculino"
+      },
+      {
+        "tipo": "signos_alarma",
+        "observacion": "Sospeche ITU complicada, paciente masculino"
+      }
+    ]
+  }
+}

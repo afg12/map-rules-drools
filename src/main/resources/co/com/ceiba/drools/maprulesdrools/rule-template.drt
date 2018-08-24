@@ -1,0 +1,23 @@
+template header
+OBSVARIABLE
+CODVARIABLE
+SISVARIABLE
+OPERADORVALOR
+OBSVALOR
+DATVALOR
+SISVALOR
+OPERADORFECHA
+CANTIDADDIA
+
+package co.com.ceiba.drools.maprulesdrools
+
+template "Rule Template"
+rule "Rule Template_@{row.rowNumber}"
+    when
+        Parametro(concepto @{OPERADORVALOR} "@{OBSVALOR}",
+            valor @{OPERADORFECHA} @{CANTIDADDIA}
+        )
+    then
+       	System.out.print("Creacion de regla")
+end
+end template
