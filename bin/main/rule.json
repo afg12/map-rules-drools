@@ -16,22 +16,22 @@
           {
             "condicion": [
               {
-                "obsVariable": "sexo",
+                "obsVariable": "parentezco",
                 "codVariable": "2030",
                 "sisVariable": "Concepto",
                 "operadorValor": "igual",
-                "obsValor": "masculino",
+                "obsValor": "madre",
                 "datValor": "2045",
                 "sisValor": "CIE10",
                 "operadorFecha": "notengamenos",
                 "cantidadDia": "90"
               },
               {
-                "obsVariable": "sexo",
+                "obsVariable": "edad",
                 "codVariable": "2030",
                 "sisVariable": "Concepto",
                 "operadorValor": "igual",
-                "obsValor": "masculino",
+                "obsValor": "60",
                 "datValor": "2045",
                 "sisValor": "CIE10",
                 "operadorFecha": "notengamenos",
@@ -65,7 +65,7 @@
                 "codVariable": "2030",
                 "sisVariable": "Concepto",
                 "operadorValor": "igual",
-                "obsValor": "masculino",
+                "obsValor": "femenino",
                 "datValor": "2045",
                 "sisValor": "CIE10",
                 "operadorFecha": "notengamenos",
@@ -76,11 +76,11 @@
           {
             "condicion": [
               {
-                "obsVariable": "sexo",
+                "obsVariable": "antecedente",
                 "codVariable": "2030",
                 "sisVariable": "Concepto",
                 "operadorValor": "igual",
-                "obsValor": "masculino",
+                "obsValor": "diabetes",
                 "datValor": "2045",
                 "sisValor": "CIE10",
                 "operadorFecha": "notengamenos",
@@ -93,11 +93,11 @@
       {
         "condicion": [
           {
-            "obsVariable": "sexo",
+            "obsVariable": "edad",
             "codVariable": "2030",
             "sisVariable": "Concepto",
             "operadorValor": "igual",
-            "obsValor": "masculino",
+            "obsValor": "56",
             "datValor": "2045",
             "sisValor": "CIE10",
             "operadorFecha": "notengamenos",
@@ -108,11 +108,11 @@
       {
         "condicion": [
           {
-            "obsVariable": "sexo",
+            "obsVariable": "presion",
             "codVariable": "2030",
             "sisVariable": "Concepto",
             "operadorValor": "igual",
-            "obsValor": "masculino",
+            "obsValor": "100",
             "datValor": "2045",
             "sisValor": "CIE10",
             "operadorFecha": "notengamenos",

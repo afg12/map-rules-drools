@@ -1,15 +1,10 @@
-package org.drools.example 
+package co.com.ceiba.drools.maprulesdrools;
 
-rule "Xyz"
-    ruleflow-grou bla
-when
-    (
-    $p : Pattern( sexoigualmasculino, x>y )  and
-    not( 
-    Bar( a+b==c )   ) ) 
-then
-System.out.println();
-
+rule "Rule_@codigo(ITU0001)"
+    when
+        $parametro: Parametro([2030 == 'Concepto' && 2045 == CIE10])
+    then
+       	$parametro.setAcciones(ITU0001)
 end
 
 

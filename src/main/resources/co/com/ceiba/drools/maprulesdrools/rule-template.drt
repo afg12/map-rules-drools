@@ -1,23 +1,27 @@
 template header
-OBSVARIABLE
-CODVARIABLE
-SISVARIABLE
-OPERADORVALOR
-OBSVALOR
-DATVALOR
-SISVALOR
-OPERADORFECHA
-CANTIDADDIA
+codeRule
+listaCondiciones
+tipoCondicion: String
 
-package co.com.ceiba.drools.maprulesdrools
+package co.com.ceiba.drools.maprulesdrools;
 
-template "Rule Template"
-rule "Rule Template_@{row.rowNumber}"
+template "Rule condiciones"
+tipoCondicion == 'Condicion'
+rule "Rule_@codigo(@{codeRule})"
     when
-        Parametro(concepto @{OPERADORVALOR} "@{OBSVALOR}",
-            valor @{OPERADORFECHA} @{CANTIDADDIA}
-        )
+        $parametro: Parametro(@{listaCondiciones})
     then
-       	System.out.print("Creacion de regla")
+       	$parametro.setAcciones(@{codeRule})
+end
+end template
+
+template "Rule grupos"
+tipoCondicion == 'Grupo'
+rule "Rule_@codigo(@{codeRule})"
+    when
+    	$codeGrupo: Grupo()
+        $parametro: Parametro(codeGrupo == $codeGrupo, @{listaCondiciones})
+    then
+       	$parametro.setAcciones(@{codeRule})
 end
 end template

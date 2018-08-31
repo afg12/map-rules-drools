@@ -33,12 +33,7 @@ dependencies {
 	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8'
 	
 	// https://mvnrepository.com/artifact/org.drools/drools-core
-	compile group: 'org.drools', name: 'drools-core', version: '7.9.0.Final'
-	// https://mvnrepository.com/artifact/org.kie/kie-ci
-	compile group: 'org.kie', name: 'kie-ci', version: '7.9.0.Final'
-	
-	// https://mvnrepository.com/artifact/org.kie/kie-spring
-	compile group: 'org.kie', name: 'kie-spring', version: '7.9.0.Final'
+	compile group: 'org.drools', name: 'drools-templates', version: '7.10.0.Final'
 	
 	
 	
