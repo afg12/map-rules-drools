@@ -3,8 +3,11 @@ package co.com.ceiba.drools.maprulesdrools.model.rule;
 import java.util.Iterator;
 import java.util.List;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Group {
 	
+	@SerializedName("condicion")
 	private List<Condition> condition;
 
 	public List<Condition> getCondition() {

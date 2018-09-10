@@ -29,8 +29,7 @@ public class MapRulesDroolsApplication {
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
 			try {
-				List<Parameter> parameters = JSONConverter.run("src/main/resources/ruleSimple.json");
-				
+				List<Parameter> parameters = JSONConverter.run("src/main/resources/rule.json");
 				ObjectDataCompiler objectDataCompiler = new ObjectDataCompiler();
 				String drl = objectDataCompiler.compile(parameters, getTemplate());
 				System.out.println(drl);

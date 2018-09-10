@@ -1,0 +1,18 @@
+package co.com.ceiba.drools.maprulesdrools.object
+
+import co.com.ceiba.drools.maprulesdrools.object.Dato
+
+rule "ITU-001-1"
+when
+	$listGrupo : List()
+	datoObject: Dato(codigoVar == "3071", sistemaVar == "concept", codigoVal in ('25'), sistemaVal == "concept", grupo == "12", contexto contains "8368")
+then
+	System.out.println("ITU-001-1");
+end
+
+rule "ITU-001-2"
+when
+	datoObject: Dato(codigoVar == "3072", sistemaVar == "concept", codigoVal in ('188'), sistemaVal == "concept", grupo == "12", contexto contains "8368")
+then
+	System.out.println("ITU-001-2");
+end

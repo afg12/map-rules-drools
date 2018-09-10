@@ -14,6 +14,7 @@ import com.google.gson.stream.JsonReader;
 
 import co.com.ceiba.drools.maprulesdrools.deserializer.ParameterDeserializer;
 import co.com.ceiba.drools.maprulesdrools.model.rule.Parameter;
+import co.com.ceiba.drools.maprulesdrools.object.Atributo;
 
 public final class JSONConverter {
 	
@@ -25,6 +26,13 @@ public final class JSONConverter {
 		JsonReader reader = new JsonReader(new FileReader(filename));
 		return gson.fromJson(reader, listRuleTypeO);
 		
+	}
+	
+	public static Atributo convertObject(String filename) throws IOException {
+		// read json
+		Gson gson = new Gson();
+		JsonReader reader = new JsonReader(new FileReader(filename));
+		return gson.fromJson(reader, Atributo.class);
 	}
 	
 	public static List<Parameter> run(String filename) throws FileNotFoundException {

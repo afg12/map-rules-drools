@@ -1,0 +1,29 @@
+{
+    "metadatos": {
+      "id": "0123456789",
+      "cliente": "PHC",
+      "fecha": "2018-09-06T16:40:23.366Z"
+    },
+    "datos": [
+      {
+        "codigo_var": "3071",
+        "sistema_var": "concept",
+        "codigo_val": "25",
+        "sistema_val": "concept",
+        "grupo": "12",
+        "contexto": "8368",
+        "fecha": "2018-09-06T16:40:23.366Z",
+        "dias": "15"
+      },
+      {
+        "codigo_var": "3072",
+        "sistema_var": "concept",
+        "codigo_val": "188",
+        "sistema_val": "concept",
+        "grupo": "12",
+        "contexto": "8368",
+        "fecha": "2018-09-06T16:40:23.366Z",
+        "dias": "83"
+      }
+    ]
+  }

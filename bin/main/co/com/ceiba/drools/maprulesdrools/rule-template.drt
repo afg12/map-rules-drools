@@ -1,26 +1,26 @@
 template header
 codeRule
-listaCondiciones
-tipoCondicion: String
+conditionsList
+conditionType: String
 
 package co.com.ceiba.drools.maprulesdrools;
 
 template "Rule condiciones"
-tipoCondicion == 'Condicion'
-rule "Rule_@codigo(@{codeRule})"
+conditionType == 'Condicion'
+rule "Rule_@{codeRule}_@{row.rowNumber}"
     when
-        $parametro: Parametro(@{listaCondiciones})
+        $parametro: Parametro(@{conditionsList})
     then
        	$parametro.setAcciones(@{codeRule})
 end
 end template
 
 template "Rule grupos"
-tipoCondicion == 'Grupo'
-rule "Rule_@codigo(@{codeRule})"
+conditionType == 'Grupo'
+rule "Rule_@{codeRule}_@{row.rowNumber}"
     when
     	$codeGrupo: Grupo()
-        $parametro: Parametro(codeGrupo == $codeGrupo, @{listaCondiciones})
+        $parametro: Parametro(codeGrupo == $codeGrupo, @{conditionsList})
     then
        	$parametro.setAcciones(@{codeRule})
 end

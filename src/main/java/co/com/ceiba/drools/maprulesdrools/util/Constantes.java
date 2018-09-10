@@ -11,5 +11,5 @@ public class Constantes {
     public static final String MENOR_IGUAL = "menor_igual";
     public static final String NO_TENGA_MENOR = "notengamenos";
     public static final String NO_TENGA_MAYOR = "no_tenga_mayor";
-
+    public static final String GRUPO = "grupo";
 }

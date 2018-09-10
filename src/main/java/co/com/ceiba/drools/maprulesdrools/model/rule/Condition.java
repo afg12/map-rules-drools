@@ -1,5 +1,7 @@
 package co.com.ceiba.drools.maprulesdrools.model.rule;
 
+import java.lang.reflect.Array;
+
 import com.google.gson.annotations.SerializedName;
 
 import co.com.ceiba.drools.maprulesdrools.util.Constantes;
@@ -13,7 +15,7 @@ public class Condition{
 	private String codVariable;
 	
 	@SerializedName("sis_variable")
-    private Object sisVariable;
+    private String sisVariable;
 	
 	@SerializedName("operador_valor")
     private String operatorValue;
@@ -22,7 +24,7 @@ public class Condition{
     private String obsValue;
 	
 	@SerializedName("dat_valor")
-    private String datValue;
+    private Object datValue;
 	
 	@SerializedName("sis_valor")
     private String sisValue;
@@ -45,10 +47,10 @@ public class Condition{
 	public void setCodVariable(String codVariable) {
 		this.codVariable = codVariable;
 	}
-	public Object getSisVariable() {
+	public String getSisVariable() {
 		return sisVariable;
 	}
-	public void setSisVariable(Object sisVariable) {
+	public void setSisVariable(String sisVariable) {
 		this.sisVariable = sisVariable;
 	}
 	public String getOperatorValue() {
@@ -63,10 +65,10 @@ public class Condition{
 	public void setObsValue(String obsValue) {
 		this.obsValue = obsValue;
 	}
-	public String getDatValue() {
+	public Object getDatValue() {
 		return datValue;
 	}
-	public void setDatValue(String datValue) {
+	public void setDatValue(Object datValue) {
 		this.datValue = datValue;
 	}
 	public String getSisValue() {
@@ -91,15 +93,25 @@ public class Condition{
 	@Override
 	public String toString() {
 		StringBuilder statementBuilder = new StringBuilder();
-		statementBuilder.append(codVariable).append(" ").append(getValue(operatorValue)).append(" ");
+		//codigo_variable
+		statementBuilder.append("codigo_variable").append(" == ");
+		statementBuilder.append("'").append(codVariable).append("'").append(" && ");
 		
-		if (sisVariable instanceof String) {
-            statementBuilder.append("'").append(sisVariable).append("'");
+		//sistema_variable
+		statementBuilder.append("sistema_variable").append(" == ");
+		statementBuilder.append("'").append(sisVariable).append("'").append(" && ");
+		
+		//dato_valor
+		if (datValue instanceof Array) {
+			statementBuilder.append(datValue).append(" ").append(getValue(operatorValue)).append(" ").append("dato_valor");
         } else {
-            statementBuilder.append(sisVariable);
+        	statementBuilder.append("dato_valor").append(" ").append(getValue(operatorValue)).append(" ");
+        	statementBuilder.append("'").append(datValue).append("'");
         }
 		statementBuilder.append(" && ");
-		statementBuilder.append(datValue).append(" ").append("==").append(" ").append(sisValue);
+		//sistema_valor
+		statementBuilder.append("sistema_valor").append(" == ");
+		statementBuilder.append("'").append(sisValue).append("'");
 		return statementBuilder.toString();
 		
 	}
@@ -126,6 +138,9 @@ public class Condition{
 			break;
 		case Constantes.NO_TENGA_MAYOR:
 			operador = "<=";
+			break;
+		case Constantes.GRUPO:
+			operador = "contains";
 			break;
 		default:
 			break;

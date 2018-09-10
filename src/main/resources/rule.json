@@ -1,139 +1,128 @@
 {
-  "regla": {
-    "metadatos": {
-      "codigo": "ITU0001",
-      "tema": "1:ITU o 2:DIabetes",
-      "momento": "conductaAltaPHC",
-      "informacion": "Regla de ITU con diagnosticos y sexo del paciente",
-      "obs_interna": "texto",
-      "autores": "Dr Juan Fernando zapata",
-      "fecha_creacion": "18 de junio - 2018",
-      "referencia": "Guia ITU, revision 2016"
-    },
-    "condiciones": [
-      {
-        "grupo": [
-          {
-            "condicion": [
-              {
-                "obsVariable": "parentezco",
-                "codVariable": "2030",
-                "sisVariable": "Concepto",
-                "operadorValor": "igual",
-                "obsValor": "madre",
-                "datValor": "2045",
-                "sisValor": "CIE10",
-                "operadorFecha": "notengamenos",
-                "cantidadDia": "90"
-              },
-              {
-                "obsVariable": "edad",
-                "codVariable": "2030",
-                "sisVariable": "Concepto",
-                "operadorValor": "igual",
-                "obsValor": "60",
-                "datValor": "2045",
-                "sisValor": "CIE10",
-                "operadorFecha": "notengamenos",
-                "cantidadDia": "90"
-              }
-            ]
-          },
-          {
-            "condicion": [
-              {
-                "obsVariable": "sexo",
-                "codVariable": "2030",
-                "sisVariable": "Concepto",
-                "operadorValor": "igual",
-                "obsValor": "masculino",
-                "datValor": "2045",
-                "sisValor": "CIE10",
-                "operadorFecha": "notengamenos",
-                "cantidadDia": "90"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "grupo": [
-          {
-            "condicion": [
-              {
-                "obsVariable": "sexo",
-                "codVariable": "2030",
-                "sisVariable": "Concepto",
-                "operadorValor": "igual",
-                "obsValor": "femenino",
-                "datValor": "2045",
-                "sisValor": "CIE10",
-                "operadorFecha": "notengamenos",
-                "cantidadDia": "90"
-              }
-            ]
-          },
-          {
-            "condicion": [
-              {
-                "obsVariable": "antecedente",
-                "codVariable": "2030",
-                "sisVariable": "Concepto",
-                "operadorValor": "igual",
-                "obsValor": "diabetes",
-                "datValor": "2045",
-                "sisValor": "CIE10",
-                "operadorFecha": "notengamenos",
-                "cantidadDia": "90"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "condicion": [
-          {
-            "obsVariable": "edad",
-            "codVariable": "2030",
-            "sisVariable": "Concepto",
-            "operadorValor": "igual",
-            "obsValor": "56",
-            "datValor": "2045",
-            "sisValor": "CIE10",
-            "operadorFecha": "notengamenos",
-            "cantidadDia": "90"
-          }
-        ]
-      },
-      {
-        "condicion": [
-          {
-            "obsVariable": "presion",
-            "codVariable": "2030",
-            "sisVariable": "Concepto",
-            "operadorValor": "igual",
-            "obsValor": "100",
-            "datValor": "2045",
-            "sisValor": "CIE10",
-            "operadorFecha": "notengamenos",
-            "cantidadDia": "90"
-          }
-        ]
-      }
-    ],
-    "acciones": [
-      {
-        "tipo": "Alerta",
-        "observacion": "Descarte: -I.T.S (Infección de transmisión sexual),\n Prostatitis, Anormalidades anatómicas TGU (tracto genitourinario). -Instrumentación TGU. \t\t\t  -Sospeche ITU complicada"
-      },
-      {
-        "tipo": "recomendacion",
-        "observacion": "Sospeche ITU complicada, paciente masculino"
-      },
-      {
-        "tipo": "signos_alarma",
-        "observacion": "Sospeche ITU complicada, paciente masculino"
-      }
-    ]
-  }
+	"regla": {
+		"metadatos": {
+			"codigo": "ITU0001",
+			"tema": "1:ITU o 2:DIabetes",
+			"momento": "conductaAltaPHC",
+			"informacion": "Regla de ITU con diagnosticos y sexo del paciente",
+			"obs_interna": "texto",
+			"autores": "Dr Juan Fernando zapata",
+			"fecha_creacion": "18 de junio - 2018",
+			"referencia": "Guia ITU, revision 2016"
+		},
+		"condiciones": [
+			{
+				"grupo": [
+					{
+						"condicion": [
+							{
+								"obs_variable": "sexo",
+								"cod_variable": "2030",
+								"sis_variable": "Concepto",
+								"operador_valor": "igual",
+								"obs_valor": "masculino",
+								"dat_valor": "N300, N301, N302, N303, N304, N308, N309, N390, N398, N399, O230, O231,O232, O232, O234, O239, R300, R301",
+								"sis_valor": "CIE10",
+								"operador_fecha": "notengamenos",
+								"cantidad_dia": "90"
+							}
+						]
+					},
+					{
+						"condicion": [
+							{
+								"obs_variable": "sexo",
+								"cod_variable": "2030",
+								"sis_variable": "Concepto",
+								"operador_valor": "igual",
+								"obs_valor": "masculino",
+								"dat_valor": "2045",
+								"sis_valor": "CIE10",
+								"operador_fecha": "notengamenos",
+								"cantidad_dia": "90"
+							}
+						]
+					}
+				]
+			},
+			{
+				"grupo": [
+					{
+						"condicion": [
+							{
+								"obs_variable": "sexo",
+								"cod_variable": "2030",
+								"sis_variable": "Concepto",
+								"operador_valor": "igual",
+								"obs_valor": "masculino",
+								"dat_valor": "2045",
+								"sis_valor": "CIE10",
+								"operador_fecha": "notengamenos",
+								"cantidad_dia": "90"
+							}
+						]
+					},
+					{
+						"condicion": [
+							{
+								"obs_variable": "sexo",
+								"cod_variable": "2030",
+								"sis_variable": "Concepto",
+								"operador_valor": "igual",
+								"obs_valor": "masculino",
+								"dat_valor": "2045",
+								"sis_valor": "CIE10",
+								"operador_fecha": "notengamenos",
+								"cantidad_dia": "90"
+							}
+						]
+					}
+				]
+			},
+			{
+				"condicion": [
+					{
+						"obs_variable": "sexo",
+						"cod_variable": "2030",
+						"sis_variable": "Concepto",
+						"operador_valor": "igual",
+						"obs_valor": "masculino",
+						"dat_valor": "2045",
+						"sis_valor": "CIE10",
+						"operador_fecha": "notengamenos",
+						"cantidad_dia": "90"
+					}
+				]
+			},
+			{
+				"condicion": [
+					{
+						"obs_variable": "sexo",
+						"cod_variable": "2030",
+						"sis_variable": "Concepto",
+						"operador_valor": "igual",
+						"obs_valor": "masculino",
+						"dat_valor": "2045",
+						"sis_valor": "CIE10",
+						"operador_fecha": "notengamenos",
+						"cantidad_dia": "90"
+					}
+				]
+			}
+		],
+		"acciones": [
+			{
+				"tipo": "Alerta",
+				"observacion": "Descarte: -I.T.S (Infección de transmisión sexual),\n Prostatitis, Anormalidades anatómicas TGU (tracto genitourinario). -Instrumentación TGU. \t\t\t  -Sospeche ITU complicada"
+			},
+			{
+				"tipo": "recomendacion",
+				"observacion": "Sospeche ITU complicada, paciente masculino"
+			},
+			{
+				"tipo": "signos_alarma",
+				"observacion": "Sospeche ITU complicada, paciente masculino"
+			}
+		]
+	}
 }
