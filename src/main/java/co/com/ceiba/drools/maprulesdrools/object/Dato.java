@@ -20,6 +20,20 @@ public class Dato {
 	private String fecha;
 	private String dias;
 	
+	
+	public Dato(String codigoVar, String sistemaVar, String codigoVal, String sistemaVal, String grupo, String contexto,
+			String fecha, String dias) {
+		super();
+		this.codigoVar = codigoVar;
+		this.sistemaVar = sistemaVar;
+		this.codigoVal = codigoVal;
+		this.sistemaVal = sistemaVal;
+		this.grupo = grupo;
+		this.contexto = contexto;
+		this.fecha = fecha;
+		this.dias = dias;
+	}
+	
 	public String getCodigoVar() {
 		return codigoVar;
 	}
