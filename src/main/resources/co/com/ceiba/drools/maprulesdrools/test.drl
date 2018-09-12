@@ -1,0 +1,36 @@
+package co.com.ceiba.drools.maprulesdrools.object
+import co.com.ceiba.drools.maprulesdrools.object.Dato
+import co.com.ceiba.drools.maprulesdrools.object.Grupo
+import java.util.List
+
+rule "Rule_ITU0001_0"
+    when
+    	$grupo : Grupo()
+    	$list : List() from collect (Dato(grupo == $grupo.getId()))
+    	Dato(codigoVar == '6589',sistemaVar == 'Concepto',codigoVal == '2049',sistemaVal == 'CIE10',contexto contains '') && Dato(codigoVar == '6589',sistemaVar == 'Concepto',codigoVal == '2049',sistemaVal == 'CIE10',contexto contains '') from $list;
+    then
+       System.out.println("Rule_ITU0001_0");
+end
+
+rule "Rule_ITU0001_1"
+    when
+        Dato(codigoVar == '6589',sistemaVar == 'Concepto',codigoVal == '2049',sistemaVal == 'CIE10',contexto contains '')
+    then
+       	System.out.println("Rule_ITU0001_1");
+end
+
+rule "Rule_ITU0001_2"
+    when
+        Dato(codigoVar == '6589',sistemaVar == 'Concepto',codigoVal >= '2049',sistemaVal == 'numerico',contexto contains '')
+    then
+       	System.out.println("Rule_ITU0001_2");
+end
+
+rule "Rule_ITU0001_3"
+    when
+        Dato(codigoVar == '2032',sistemaVar == 'Concepto',codigoVal >= '2049',sistemaVal == 'numerico',contexto contains '')
+    then
+       	System.out.println("Rule_ITU0001_3");
+end
+
+

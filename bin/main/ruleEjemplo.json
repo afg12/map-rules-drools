@@ -26,14 +26,24 @@
         "dias": "83"
       },
       {
-        "codigo_var": "3072",
+        "codigo_var": "3073",
         "sistema_var": "concept",
-        "codigo_val": "188",
+        "codigo_val": "184",
         "sistema_val": "concept",
         "grupo": "15",
         "contexto": "8368",
         "fecha": "2018-09-06T16:40:23.366Z",
-        "dias": "83"
+        "dias": "85"
+      },
+      {
+        "codigo_var": "3074",
+        "sistema_var": "concept",
+        "codigo_val": "184",
+        "sistema_val": "concept",
+        "grupo": "15",
+        "contexto": "8368",
+        "fecha": "2018-09-06T16:40:23.366Z",
+        "dias": "85"
       }
     ]
   }

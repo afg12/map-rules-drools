@@ -3,15 +3,19 @@ codeRule
 conditionsList
 conditionType: String
 
-package co.com.ceiba.drools.maprulesdrools;
+package co.com.ceiba.drools.maprulesdrools.object
+
+import co.com.ceiba.drools.maprulesdrools.object.Dato
+import co.com.ceiba.drools.maprulesdrools.object.Grupo
+import java.util.List
 
 template "Rule condiciones"
 conditionType == 'Condicion'
 rule "Rule_@{codeRule}_@{row.rowNumber}"
     when
-        $parametro: Parametro(@{conditionsList})
+        @{conditionsList}
     then
-       	$parametro.setAcciones(@{codeRule})
+       	System.out.println("Rule_@{codeRule}_@{row.rowNumber}");
 end
 end template
 
@@ -19,9 +23,10 @@ template "Rule grupos"
 conditionType == 'Grupo'
 rule "Rule_@{codeRule}_@{row.rowNumber}"
     when
-    	$codeGrupo: Grupo()
-        $parametro: Parametro(codeGrupo == $codeGrupo, @{conditionsList})
+    	$grupo : Grupo()
+    	$list : List() from collect (Dato(grupo == $grupo.getId()))
+    	@{conditionsList} from $list;
     then
-       	$parametro.setAcciones(@{codeRule})
+       System.out.println("Rule_@{codeRule}_@{row.rowNumber}");
 end
 end template

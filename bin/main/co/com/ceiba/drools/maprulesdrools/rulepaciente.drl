@@ -1,17 +1,33 @@
 package co.com.ceiba.drools.maprulesdrools.object
 
+
 import co.com.ceiba.drools.maprulesdrools.object.Dato
 import co.com.ceiba.drools.maprulesdrools.object.Grupo
 import java.util.List
-import java.util.ArrayList
 
 rule "ITU-001-1"
 when
 	$grupo : Grupo()
-	$list : List() from accumulate( $datoObject: Dato(grupo == $grupo.getId());
-				                   collectList($datoObject))
+	$list : List() from collect (Dato(grupo == $grupo.getId()))
+    Dato(codigoVar == "3071", sistemaVar == "concept", codigoVal in ('25'), sistemaVal == "concept", contexto contains "8368") &&
+    Dato(codigoVar == "3072", sistemaVar == "concept", codigoVal in ('188'), sistemaVal == "concept", contexto contains "8368") from $list
 then
-	System.out.println($list.get(0).getGrupo());
+	for( int i = 0; i < $list.size(); i++ ){
+        Dato d = (Dato)$list.get(i);
+        System.out.println("rule 1: "+d.getCodigoVar()+ ": "+d.getGrupo());
+        }
+end
+
+rule "ITU-001-2"
+when
+	$grupo : Grupo()
+	$list : List() from collect (Dato(grupo == $grupo.getId()))
+    Dato(codigoVar == "3074", sistemaVar == "concept", codigoVal in ('184'), sistemaVal == "concept", contexto contains "8368") from $list
+then
+	for( int i = 0; i < $list.size(); i++ ){
+        Dato d = (Dato)$list.get(i);
+        System.out.println("rule 2: "+d.getCodigoVar()+ ": "+d.getGrupo());
+        }
 end
 
 

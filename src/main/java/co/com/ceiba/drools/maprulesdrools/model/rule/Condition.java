@@ -8,110 +8,151 @@ import co.com.ceiba.drools.maprulesdrools.util.Constantes;
 
 public class Condition{
 	
-	@SerializedName("obs_variable")
-	private String obsVariable;
+	@SerializedName("cod_var")
+	private String codVar;
 	
-	@SerializedName("cod_variable")
-	private String codVariable;
+	@SerializedName("des_var")
+	private String desVar;
 	
-	@SerializedName("sis_variable")
-    private String sisVariable;
+	@SerializedName("sis_var")
+    private String sisVar;
 	
-	@SerializedName("operador_valor")
-    private String operatorValue;
+	@SerializedName("ope_val")
+    private String opeVal;
 	
-	@SerializedName("obs_valor")
-    private String obsValue;
+	@SerializedName("cod_val")
+    private Object codVal;
 	
-	@SerializedName("dat_valor")
-    private Object datValue;
+	@SerializedName("des_val")
+    private String desVal;
 	
-	@SerializedName("sis_valor")
-    private String sisValue;
+	@SerializedName("sis_val")
+    private String sisVal;
 	
-	@SerializedName("operador_fecha")
-    private String operatorDate;
+	@SerializedName("ope_fec")
+    private String opeFec;
 	
-	@SerializedName("cantidad_dia")
-    private String amountDay;
-    
-	public String getObsVariable() {
-		return obsVariable;
-	}
-	public void setObsVariable(String obsVariable) {
-		this.obsVariable = obsVariable;
-	}
-	public String getCodVariable() {
-		return codVariable;
-	}
-	public void setCodVariable(String codVariable) {
-		this.codVariable = codVariable;
-	}
-	public String getSisVariable() {
-		return sisVariable;
-	}
-	public void setSisVariable(String sisVariable) {
-		this.sisVariable = sisVariable;
-	}
-	public String getOperatorValue() {
-		return operatorValue;
-	}
-	public void setOperatorValue(String operatorValue) {
-		this.operatorValue = operatorValue;
-	}
-	public String getObsValue() {
-		return obsValue;
-	}
-	public void setObsValue(String obsValue) {
-		this.obsValue = obsValue;
-	}
-	public Object getDatValue() {
-		return datValue;
-	}
-	public void setDatValue(Object datValue) {
-		this.datValue = datValue;
-	}
-	public String getSisValue() {
-		return sisValue;
-	}
-	public void setSisValue(String sisValue) {
-		this.sisValue = sisValue;
-	}
-	public String getOperatorDate() {
-		return operatorDate;
-	}
-	public void setOperatorDate(String operatorDate) {
-		this.operatorDate = operatorDate;
-	}
-	public String getAmountDay() {
-		return amountDay;
-	}
-	public void setAmountDay(String amountDay) {
-		this.amountDay = amountDay;
-	}
+	@SerializedName("dias")
+    private String days;
 	
+	private String contexto;
+	
+	@SerializedName("des_ctx")
+	private String desCtx;
+	
+	public String getCodVar() {
+		return codVar;
+	}
+
+	public void setCodVar(String codVar) {
+		this.codVar = codVar;
+	}
+
+	public String getDesVar() {
+		return desVar;
+	}
+
+	public void setDesVar(String desVar) {
+		this.desVar = desVar;
+	}
+
+	public String getSisVar() {
+		return sisVar;
+	}
+
+	public void setSisVar(String sisVar) {
+		this.sisVar = sisVar;
+	}
+
+	public String getOpeVal() {
+		return opeVal;
+	}
+
+	public void setOpeVal(String opeVal) {
+		this.opeVal = opeVal;
+	}
+
+	public Object getCodVal() {
+		return codVal;
+	}
+
+	public void setCodVal(Object codVal) {
+		this.codVal = codVal;
+	}
+
+	public String getDesVal() {
+		return desVal;
+	}
+
+	public void setDesVal(String desVal) {
+		this.desVal = desVal;
+	}
+
+	public String getSisVal() {
+		return sisVal;
+	}
+
+	public void setSisVal(String sisVal) {
+		this.sisVal = sisVal;
+	}
+
+	public String getOpeFec() {
+		return opeFec;
+	}
+
+	public void setOpeFec(String opeFec) {
+		this.opeFec = opeFec;
+	}
+
+	public String getDays() {
+		return days;
+	}
+
+	public void setDays(String days) {
+		this.days = days;
+	}
+
+	public String getContexto() {
+		return contexto;
+	}
+
+	public void setContexto(String contexto) {
+		this.contexto = contexto;
+	}
+
+	public String getDesCtx() {
+		return desCtx;
+	}
+
+	public void setDesCtx(String desCtx) {
+		this.desCtx = desCtx;
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder statementBuilder = new StringBuilder();
 		//codigo_variable
-		statementBuilder.append("codigo_variable").append(" == ");
-		statementBuilder.append("'").append(codVariable).append("'").append(" && ");
+		statementBuilder.append("codigoVar").append(" == ");
+		statementBuilder.append("'").append(codVar).append("'").append(",");
 		
 		//sistema_variable
-		statementBuilder.append("sistema_variable").append(" == ");
-		statementBuilder.append("'").append(sisVariable).append("'").append(" && ");
+		statementBuilder.append("sistemaVar").append(" == ");
+		statementBuilder.append("'").append(sisVar).append("'").append(",");
 		
 		//dato_valor
-		if (datValue instanceof Array) {
-			statementBuilder.append(datValue).append(" ").append(getValue(operatorValue)).append(" ").append("dato_valor");
+		if (codVal instanceof Array) {
+			statementBuilder.append("codigoVal").append(" ").append(getValue(opeVal)).append(" (").append(codVal).append(") ").append(",");
         } else {
-        	statementBuilder.append("dato_valor").append(" ").append(getValue(operatorValue)).append(" ");
-        	statementBuilder.append("'").append(datValue).append("'");
+        	statementBuilder.append("codigoVal").append(" ").append(getValue(opeVal)).append(" ");
+        	statementBuilder.append("'").append(codVal).append("'").append(",");
         }
-		statementBuilder.append(" && ");
 		//sistema_valor
-		statementBuilder.append("sistema_valor").append(" == ");
-		statementBuilder.append("'").append(sisValue).append("'");
+		statementBuilder.append("sistemaVal").append(" == ");
+		statementBuilder.append("'").append(sisVal).append("'").append(",");
+		
+		//contexto
+		statementBuilder.append("contexto").append(" contains ");
+		statementBuilder.append("'").append(contexto).append("'");
 		return statementBuilder.toString();
 		
 	}
@@ -140,7 +181,7 @@ public class Condition{
 			operador = "<=";
 			break;
 		case Constantes.GRUPO:
-			operador = "contains";
+			operador = "in";
 			break;
 		default:
 			break;

@@ -45,7 +45,7 @@ public class MapRulesDroolsApplication {
 
 	private static void createDrlFile(String drl) throws IOException {
 		// create new file
-		File file = new File("src/main/resources/test.drl");
+		File file = new File("src/main/resources/co/com/ceiba/drools/maprulesdrools/test.drl");
 
 		if (file.exists()) {
 			Files.delete(file);

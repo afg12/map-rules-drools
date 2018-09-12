@@ -1,14 +1,12 @@
 package co.com.ceiba.drools.maprulesdrools.model.rule;
 
-import java.util.List;
-
 public class Parameter {
 	
 	private String codeRule;
-	private List<Class<?>> conditionsList;
+	private String conditionsList;
 	private String conditionType;
 	
-	public Parameter(String codeRule, List<Class<?>> conditionsList, String conditionType) {
+	public Parameter(String codeRule, String conditionsList, String conditionType) {
 		super();
 		this.codeRule = codeRule;
 		this.conditionsList = conditionsList;
@@ -21,10 +19,10 @@ public class Parameter {
 	public void setCodeRule(String codeRule) {
 		this.codeRule = codeRule;
 	}
-	public List<Class<?>> getConditionsList() {
+	public String getConditionsList() {
 		return conditionsList;
 	}
-	public void setConditionsList(List<Class<?>> conditionsList) {
+	public void setConditionsList(String conditionsList) {
 		this.conditionsList = conditionsList;
 	}
 	public String getConditionType() {
