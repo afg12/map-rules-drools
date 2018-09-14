@@ -1,9 +1,14 @@
 package co.com.ceiba.drools.maprulesdrools.model.rule;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Action {
 	
+	@SerializedName("tipo")
 	private String type;
-    private String observation;
+	
+	@SerializedName("descripcion")
+    private String description;
     
 	public String getType() {
 		return type;
@@ -11,18 +16,18 @@ public class Action {
 	public void setType(String type) {
 		this.type = type;
 	}
-	public String getObservation() {
-		return observation;
+	public String getDescription() {
+		return description;
 	}
-	public void setObservation(String observation) {
-		this.observation = observation;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	@Override
 	public String toString() {
 		StringBuilder statementBuilder = new StringBuilder();
 		
-		statementBuilder.append(type).append(observation);
+		statementBuilder.append(type).append(",").append(description);
 		
 		return statementBuilder.toString();
 	}

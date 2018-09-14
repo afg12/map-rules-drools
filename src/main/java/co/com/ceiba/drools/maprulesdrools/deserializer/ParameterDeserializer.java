@@ -13,6 +13,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 
+import co.com.ceiba.drools.maprulesdrools.model.rule.Action;
 import co.com.ceiba.drools.maprulesdrools.model.rule.Condition;
 import co.com.ceiba.drools.maprulesdrools.model.rule.Parameter;
 
@@ -24,6 +25,9 @@ public class ParameterDeserializer implements JsonDeserializer<List<Parameter>> 
 		Gson gson = new Gson();
 		String ruleCode = "";
 		String conditionType = "";
+		String acciones = "";
+		String lastRow = "false";
+		String firstRow = "true";
 		JsonObject root = json.getAsJsonObject();
 		
 		if (root.has("metadatos")) {
@@ -32,37 +36,62 @@ public class ParameterDeserializer implements JsonDeserializer<List<Parameter>> 
 
 		}
 		
+		if (root.has("acciones")) {
+			JsonArray arrayAcciones = root.get("acciones").getAsJsonArray();
+			Type listAction = new TypeToken<List<Action>>() {
+			}.getType();
+			acciones = convertString(gson.fromJson(arrayAcciones, listAction), ",");
+
+		}
+		
 		JsonArray array;
-		List<Condition> conditionsList;
 		if (root.has("condiciones")) {
 			array = root.get("condiciones").getAsJsonArray();
-			for (JsonElement elementCondicion : array) {
-				JsonArray conditionsArray = elementCondicion.getAsJsonArray();
+			for (int i = 0; i < array.size(); i++) {
+				JsonElement condition = array.get(i);
+				JsonArray conditionsArray = condition.getAsJsonArray();
+				
+				if(i > 0) {
+					firstRow = "false";
+				}
+				
 				if (conditionsArray.size() > 1) {
 					conditionType = "Grupo";
 				} else {
 					conditionType = "Condicion";
 				}
+				
+				if(i == array.size() - 1) {
+					lastRow = acciones;
+				}
+				
 				Type listRuleType = new TypeToken<List<Condition>>() {
 				}.getType();
 				
-				conditionsList = gson.fromJson(conditionsArray, listRuleType);
-				parameters.add(new Parameter(ruleCode, convertString(conditionsList), conditionType));
+				parameters.add(new Parameter(ruleCode, convertString(gson.fromJson(conditionsArray, listRuleType), " && "), conditionType, lastRow, firstRow));
 			}
 
 		}
 		return parameters;
 	}
 	
-	public String convertString(List<Condition> conditionsList) {
+	public <T> String convertString(List<T> elementList, String separator) {
 		StringBuilder statementBuilder = new StringBuilder();
-		 for (Iterator<Condition> iterator = conditionsList.iterator(); iterator.hasNext();) {
-			Condition conditionElement = iterator.next();	
-			statementBuilder.append("Dato").append("(");
-			statementBuilder.append(conditionElement.toString());
-			statementBuilder.append(")");
+		 for (Iterator<T> iterator = elementList.iterator(); iterator.hasNext();) {
+			T element = iterator.next();	
+
+			if(element instanceof Condition) {
+				statementBuilder.append("Dato").append("(");
+				statementBuilder.append(element.toString());
+				statementBuilder.append(")");
+			} else if (element instanceof Action){
+				statementBuilder.append("\"");
+				statementBuilder.append(element.toString());
+				statementBuilder.append("\"");
+			}
+
 			if(iterator.hasNext()) {
-				statementBuilder.append(" && ");
+				statementBuilder.append(separator).append("\n");
 			}
 		}
 		return statementBuilder.toString();

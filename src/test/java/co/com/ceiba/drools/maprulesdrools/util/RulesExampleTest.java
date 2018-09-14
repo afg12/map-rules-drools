@@ -2,7 +2,6 @@ package co.com.ceiba.drools.maprulesdrools.util;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,6 +16,7 @@ import org.kie.internal.command.CommandFactory;
 import co.com.ceiba.drools.maprulesdrools.object.Atributo;
 import co.com.ceiba.drools.maprulesdrools.object.Dato;
 import co.com.ceiba.drools.maprulesdrools.object.Grupo;
+import co.com.ceiba.drools.maprulesdrools.object.Recomendacion;
 
 public class RulesExampleTest {
 
@@ -37,14 +37,19 @@ public class RulesExampleTest {
 	            grupoList.add(grupo);
 	        }
 			
+			List<String> actions = new ArrayList<>();
+			
 			@SuppressWarnings("rawtypes")
 			List<Command> cmds = new ArrayList<>();
 			cmds.add(CommandFactory.newInsertElements(grupoList));
 			cmds.add(CommandFactory.newInsertElements(atributo.getDatos()));
+			cmds.add(CommandFactory.newInsert(new Recomendacion(actions), "recomendacion"));
 			cmds.add(CommandFactory.newFireAllRules());
 			ExecutionResults results = kSession.execute(CommandFactory.newBatchExecution(cmds));
 			System.out.println(results.getIdentifiers());
-			
+			Recomendacion r = (Recomendacion) results.getValue("recomendacion");
+			System.out.println(r.getActions().get(0));
+			r.getActions().forEach(name -> System.out.println(name));
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

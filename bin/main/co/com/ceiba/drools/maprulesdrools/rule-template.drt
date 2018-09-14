@@ -2,31 +2,95 @@ template header
 codeRule
 conditionsList
 conditionType: String
+actions: String
+firstRow: Boolean
 
 package co.com.ceiba.drools.maprulesdrools.object
 
+
 import co.com.ceiba.drools.maprulesdrools.object.Dato
 import co.com.ceiba.drools.maprulesdrools.object.Grupo
+import co.com.ceiba.drools.maprulesdrools.object.Recomendacion
 import java.util.List
 
-template "Rule condiciones"
+declare Recomendacion
+	@propertyReactive
+end	
+
+rule "Validar grupo"
+when
+	$grupo : Grupo()
+	$list : List() from collect (Dato(grupo == $grupo.getId()))
+then
+end
+
+template "Rule condiciones main"
 conditionType == 'Condicion'
+firstRow == true
 rule "Rule_@{codeRule}_@{row.rowNumber}"
+agenda-group "MAIN"
     when
         @{conditionsList}
     then
        	System.out.println("Rule_@{codeRule}_@{row.rowNumber}");
+       	drools.setFocus("@{row.rowNumber+1}");
+end
+end template
+
+template "Rule grupos main"
+conditionType == 'Grupo'
+firstRow == true
+rule "Rule_@{codeRule}_@{row.rowNumber}" extends "Validar grupo"
+	agenda-group "MAIN"
+    when
+    	@{conditionsList} from $list;
+    then
+       System.out.println("Rule_@{codeRule}_@{row.rowNumber}");
+       drools.setFocus("@{row.rowNumber+1}");
+end
+end template
+
+template "Rule condiciones"
+conditionType == 'Condicion'
+actions == 'false'
+firstRow == false
+rule "Rule_@{codeRule}_@{row.rowNumber}"
+	agenda-group "@{row.rowNumber}"
+    when
+        @{conditionsList}
+    then
+       	System.out.println("Rule_@{codeRule}_@{row.rowNumber}");
+       	drools.setFocus("@{row.rowNumber+1}");
 end
 end template
 
 template "Rule grupos"
 conditionType == 'Grupo'
-rule "Rule_@{codeRule}_@{row.rowNumber}"
+actions == 'false'
+firstRow == false
+rule "Rule_@{codeRule}_@{row.rowNumber}" extends "Validar grupo"
+	agenda-group "@{row.rowNumber}"
     when
-    	$grupo : Grupo()
-    	$list : List() from collect (Dato(grupo == $grupo.getId()))
     	@{conditionsList} from $list;
     then
        System.out.println("Rule_@{codeRule}_@{row.rowNumber}");
+       drools.setFocus("@{row.rowNumber+1}");
+end
+end template
+
+template "Rule lastRow"
+actions != 'false'
+firstRow == false
+rule "Rule_@{codeRule}_@{row.rowNumber}"
+	agenda-group "@{row.rowNumber}"
+    when
+    	@{conditionsList}
+    	$r: Recomendacion($l: actions)
+    then
+     String[] actions = {@{actions}};
+	for( int i = 0; i < actions.length; ++i ){
+    	String s = (String)actions[i];
+    	$l.add(s);
+  	}
 end
 end template
