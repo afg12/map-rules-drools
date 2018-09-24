@@ -2,18 +2,18 @@ template header
 codeRule
 conditionsList
 conditionType: String
-actions: String
-firstRow: Boolean
+actions
+positionRow: String
 
 package co.com.ceiba.drools.maprulesdrools.object
 
 
 import co.com.ceiba.drools.maprulesdrools.object.Dato
 import co.com.ceiba.drools.maprulesdrools.object.Grupo
-import co.com.ceiba.drools.maprulesdrools.object.Recomendacion
+import co.com.ceiba.drools.maprulesdrools.object.Recomendation
 import java.util.List
 
-declare Recomendacion
+declare Recomendation
 	@propertyReactive
 end	
 
@@ -25,72 +25,66 @@ then
 end
 
 template "Rule condiciones main"
+positionRow == 'first'
 conditionType == 'Condicion'
-firstRow == true
 rule "Rule_@{codeRule}_@{row.rowNumber}"
 agenda-group "MAIN"
     when
         @{conditionsList}
     then
        	System.out.println("Rule_@{codeRule}_@{row.rowNumber}");
-       	drools.setFocus("@{row.rowNumber+1}");
+       	drools.setFocus("@{codeRule}-@{row.rowNumber+1}");
 end
 end template
 
 template "Rule grupos main"
+positionRow == 'first'
 conditionType == 'Grupo'
-firstRow == true
 rule "Rule_@{codeRule}_@{row.rowNumber}" extends "Validar grupo"
 	agenda-group "MAIN"
     when
     	@{conditionsList} from $list;
     then
        System.out.println("Rule_@{codeRule}_@{row.rowNumber}");
-       drools.setFocus("@{row.rowNumber+1}");
+       drools.setFocus("@{codeRule}-@{row.rowNumber+1}");
 end
 end template
 
 template "Rule condiciones"
+positionRow == 'row'
 conditionType == 'Condicion'
-actions == 'false'
-firstRow == false
 rule "Rule_@{codeRule}_@{row.rowNumber}"
-	agenda-group "@{row.rowNumber}"
+	agenda-group "@{codeRule}-@{row.rowNumber}"
     when
         @{conditionsList}
     then
        	System.out.println("Rule_@{codeRule}_@{row.rowNumber}");
-       	drools.setFocus("@{row.rowNumber+1}");
+       	drools.setFocus("@{codeRule}-@{row.rowNumber+1}");
 end
 end template
 
 template "Rule grupos"
+positionRow == 'row'
 conditionType == 'Grupo'
-actions == 'false'
-firstRow == false
 rule "Rule_@{codeRule}_@{row.rowNumber}" extends "Validar grupo"
-	agenda-group "@{row.rowNumber}"
+	agenda-group "@{codeRule}-@{row.rowNumber}"
     when
     	@{conditionsList} from $list;
     then
        System.out.println("Rule_@{codeRule}_@{row.rowNumber}");
-       drools.setFocus("@{row.rowNumber+1}");
+       drools.setFocus("@{codeRule}-@{row.rowNumber+1}");
 end
 end template
 
 template "Rule lastRow"
-actions != 'false'
-firstRow == false
+positionRow == 'last'
 rule "Rule_@{codeRule}_@{row.rowNumber}"
-	agenda-group "@{row.rowNumber}"
+	agenda-group "@{codeRule}-@{row.rowNumber}"
     when
     	@{conditionsList}
-    	$r: Recomendacion($l: actions)
+    	$r: Recomendation($l: actions)
     then
-     String[] actions = {@{actions}};
-	for( int i = 0; i < actions.length; ++i ){
-    	String s = (String)actions[i];
-    	$l.add(s);
-  	}
+     String actions = @{actions};
+   	 $l.add(s);
 end
 end template

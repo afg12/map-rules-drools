@@ -4,16 +4,16 @@ import com.google.gson.annotations.SerializedName;
 
 public class Dato {
 	
-	@SerializedName("codigo_var")
+	@SerializedName("cod_var")
 	private String codigoVar;
 	
-	@SerializedName("sistema_var")
+	@SerializedName("sis_var")
 	private String sistemaVar;
 	
-	@SerializedName("codigo_val")
+	@SerializedName("cod_val")
 	private String codigoVal;
 	
-	@SerializedName("sistema_val")
+	@SerializedName("sis_val")
 	private String sistemaVal;
 	private String grupo;
 	private String contexto;

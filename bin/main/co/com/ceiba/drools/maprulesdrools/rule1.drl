@@ -1,0 +1,49 @@
+package co.com.ceiba.drools.maprulesdrools.object
+
+
+import co.com.ceiba.drools.maprulesdrools.object.Dato
+import co.com.ceiba.drools.maprulesdrools.object.Grupo
+import co.com.ceiba.drools.maprulesdrools.object.Recomendation
+import java.util.List
+
+declare Recomendacion
+	@propertyReactive
+end	
+
+rule "grupo 1"
+when
+	$grupo : Grupo()
+	$list : List() from collect (Dato(grupo == $grupo.getId()))
+then
+end
+
+rule "ITU-001-1" extends "grupo 1"
+	agenda-group "MAIN"
+when
+    Dato(codigoVar == "3071", sistemaVar == "concept", codigoVal in ('25'), sistemaVal == "concept", contexto contains "8368") &&
+    Dato(codigoVar == "3072", sistemaVar == "concept", codigoVal in ('188'), sistemaVal == "concept", contexto contains "8368") from $list;
+    $r: Recomendation($conditionList: conditionRule)
+then
+	 System.out.println("ITU-001-1");
+       for( Object obj: $list ){
+       		Dato dato = (Dato)obj;
+    		$conditionList.add(dato.getCodigoVar()+","+dato.getSistemaVar()+","+dato.getCodigoVal()+","+dato.getSistemaVal());
+  	   }
+    drools.setFocus("ITU-001-2");
+end
+
+rule "ITU-001-2"
+	agenda-group "ITU-001-2"
+when
+    $dato: Dato(codigoVar == "3073", sistemaVar == "concept", codigoVal in ('184'), sistemaVal == "concept", contexto contains "8368")
+    $r: Recomendation($conditionList: conditionRule, $actionList: actions)
+then
+	System.out.println("rule 2");
+	 $conditionList.add($dato.getCodigoVar()+","+$dato.getSistemaVar()+","+$dato.getCodigoVal()+","+$dato.getSistemaVal());
+     String actions = "[{\"tipo\":\"alerta\",\"descripcion\":\"Dormir 24 horas\"},{\"tipo\":\"recomendacion\",\"descripcion\":\"Hacer ejercicio\"}]";
+     $r.setMetadata("ITU-001-2");
+     $r.setActions(actions);
+     $r.setConditionRule($conditionList);
+end
+
+

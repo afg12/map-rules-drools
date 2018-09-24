@@ -1,42 +1,41 @@
 package co.com.ceiba.drools.maprulesdrools.object
 import co.com.ceiba.drools.maprulesdrools.object.Dato
 import co.com.ceiba.drools.maprulesdrools.object.Grupo
-import co.com.ceiba.drools.maprulesdrools.object.Recomendacion
+import co.com.ceiba.drools.maprulesdrools.object.Recomendation
 import java.util.List
-declare Recomendacion
+declare Recomendation
 	@propertyReactive
 end	
-rule "Validar grupo"
-when
-	$grupo : Grupo()
-	$list : List() from collect (Dato(grupo == $grupo.getId()))
-then
-end
 
-rule "Rule_ITU0001_0" extends "Validar grupo"
+rule "Rule_ITU0001_0"
 	agenda-group "MAIN"
     when
-    	Dato(codigoVar == "3071", sistemaVar == "concept", codigoVal in ('25'), sistemaVal == "concept", contexto contains "8368") &&
-    Dato(codigoVar == "3072", sistemaVar == "concept", codigoVal in ('188'), sistemaVal == "concept", contexto contains "8368") from $list
+    	$grupo : Grupo()
+    	$listDatos : List() from accumulate ($datoValido: Dato(grupo == $grupo.getId(), codigoVar == "49100", sistemaVar == "concept", codigoVal in ('3076'), sistemaVal == "concept", contexto contains "8190") and
+    	Dato(grupo == $grupo.getId(), codigoVar == "49101", sistemaVar == "concept", codigoVal in ('49102'), sistemaVal == "concept", contexto contains "49099");
+    	collectList( $datoValido )
+    	)
+    	$r: Recomendation($conditionList: conditionRule)
     then
        System.out.println("Rule_ITU0001_0");
-       drools.setFocus("1");
+       for( Object obj: $listDatos){
+       		Dato dato = (Dato)obj;
+    		$conditionList.add(dato.getCodigoVar()+","+dato.getSistemaVar()+","+dato.getCodigoVal()+","+dato.getSistemaVal());
+  	   }
+       drools.setFocus("ITU0001-3");
 end
 
-
-rule "Rule_ITU0001_1"
-	agenda-group "1"
+rule "Rule_ITU0001_3"
+	agenda-group "ITU0001-3"
     when
-    	Dato(codigoVar == "3074", sistemaVar == "concept", codigoVal in ('184'), sistemaVal == "concept", contexto contains "8368")
-    	$r: Recomendacion($l: actions)
+    	$dato: Dato(codigoVar == "49100", sistemaVar == "concept", codigoVal in ('3080'), sistemaVal == "concept", contexto contains "48644")
+    	$r: Recomendation($conditionList: conditionRule, $actionList: actions)
     then
-     String[] actions = {"alerta,Descarte: -I.T.S (Infección de transmisión sexual),Prostatitis, Anormalidades anatómicas TGU (tracto genitourinario).",
-"recomendacion,Tomar abundante agua",
-"signos_alarma,Sospeche ITU complicada, paciente masculino"};
-	for( int i = 0; i < actions.length; ++i ){
-    	String s = (String)actions[i];
-    	$l.add(s);
-  	}
+     $conditionList.add($dato.getCodigoVar()+","+$dato.getSistemaVar()+","+$dato.getCodigoVal()+","+$dato.getSistemaVal());
+     String actions = "[{\"tipo\":\"alerta\",\"descripcion\":\"Descarte: -I.T.S (Infección de transmisión sexual),Prostatitis, Anormalidades anatómicas TGU (tracto genitourinario).\"},{\"tipo\":\"recomendacion\",\"descripcion\":\"Tomar abundante agua\"},{\"tipo\":\"signos_alarma\",\"descripcion\":\"Sospeche ITU complicada, paciente masculino\"}]";
+     $r.setMetadata("ITU0001-3");
+     $r.setActions(actions);
+     $r.setConditionRule($conditionList);
 end
 
 

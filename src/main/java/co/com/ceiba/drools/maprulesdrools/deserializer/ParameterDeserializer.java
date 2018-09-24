@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
@@ -26,8 +27,7 @@ public class ParameterDeserializer implements JsonDeserializer<List<Parameter>> 
 		String ruleCode = "";
 		String conditionType = "";
 		String acciones = "";
-		String lastRow = "false";
-		String firstRow = "true";
+		String positionRow = "first";
 		JsonObject root = json.getAsJsonObject();
 		
 		if (root.has("metadatos")) {
@@ -40,7 +40,9 @@ public class ParameterDeserializer implements JsonDeserializer<List<Parameter>> 
 			JsonArray arrayAcciones = root.get("acciones").getAsJsonArray();
 			Type listAction = new TypeToken<List<Action>>() {
 			}.getType();
-			acciones = convertString(gson.fromJson(arrayAcciones, listAction), ",");
+			StringBuilder statementBuilder = new StringBuilder();
+			statementBuilder.append("\"").append(arrayAcciones.toString().replace("\"","\\\"")).append("\"");
+			acciones = statementBuilder.toString();
 
 		}
 		
@@ -52,7 +54,7 @@ public class ParameterDeserializer implements JsonDeserializer<List<Parameter>> 
 				JsonArray conditionsArray = condition.getAsJsonArray();
 				
 				if(i > 0) {
-					firstRow = "false";
+					positionRow = "row";
 				}
 				
 				if (conditionsArray.size() > 1) {
@@ -62,13 +64,13 @@ public class ParameterDeserializer implements JsonDeserializer<List<Parameter>> 
 				}
 				
 				if(i == array.size() - 1) {
-					lastRow = acciones;
+					positionRow = "last";
 				}
 				
 				Type listRuleType = new TypeToken<List<Condition>>() {
 				}.getType();
 				
-				parameters.add(new Parameter(ruleCode, convertString(gson.fromJson(conditionsArray, listRuleType), " && "), conditionType, lastRow, firstRow));
+				parameters.add(new Parameter(ruleCode, convertString(gson.fromJson(conditionsArray, listRuleType), " && "), conditionType, acciones, positionRow));
 			}
 
 		}

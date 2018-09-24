@@ -1,0 +1,45 @@
+package co.com.ceiba.drools.maprulesdrools.object
+
+
+import co.com.ceiba.drools.maprulesdrools.object.Dato
+import co.com.ceiba.drools.maprulesdrools.object.Grupo
+import co.com.ceiba.drools.maprulesdrools.object.Recomendation
+import java.util.List
+
+declare Recomendacion
+	@propertyReactive
+end	
+
+rule "grupo 9"
+when
+	$grupo : Grupo()
+	$list : List() from collect (Dato(grupo == $grupo.getId()))
+then
+end
+
+rule "Enfermedad09-001-1" extends "grupo 9"
+	agenda-group "MAIN"
+when
+    Dato(codigoVar == "49100", sistemaVar == "concept", codigoVal in ('3076'), sistemaVal == "concept", contexto contains "8190") &&
+    Dato(codigoVar == "49101", sistemaVar == "concept", codigoVal in ('49102'), sistemaVal == "concept", contexto contains "49099") from $list
+then
+	for( int i = 0; i < $list.size(); i++ ){
+        Dato d = (Dato)$list.get(i);
+        System.out.println("rule 3: "+d.getCodigoVar()+ ": "+d.getGrupo());
+        }
+	drools.setFocus("Enfermedad09-001-2");
+end
+
+rule "Enfermedad09-001-2"
+	agenda-group "Enfermedad09-001-2"
+when
+    Dato(codigoVar == "49100", sistemaVar == "concept", codigoVal in ('3080'), sistemaVal == "concept", contexto contains "48644")
+    $r: Recomendation($l: actions)
+then
+	System.out.println("Enfermedad09");
+	String[] actions = {"alerta, Enfermedad09"};
+	for( int i = 0; i < actions.length; ++i ){
+    	String s = (String)actions[i];
+    	$l.add(s);
+  	}
+end

@@ -6,15 +6,15 @@ public class Parameter {
 	private String conditionsList;
 	private String conditionType;
 	private String actions;
-	private String firstRow;
+	private String positionRow;
 	
-	public Parameter(String codeRule, String conditionsList, String conditionType, String actions, String firstRow) {
+	public Parameter(String codeRule, String conditionsList, String conditionType, String actions, String positionRow) {
 		super();
 		this.codeRule = codeRule;
 		this.conditionsList = conditionsList;
 		this.conditionType = conditionType;
 		this.actions = actions;
-		this.firstRow = firstRow;
+		this.positionRow = positionRow;
 	}
 
 	public String getCodeRule() {
@@ -45,12 +45,12 @@ public class Parameter {
 		this.actions = actions;
 	}
 
-	public String getFirstRow() {
-		return firstRow;
+	public String getPositionRow() {
+		return positionRow;
 	}
 
-	public void setFirstRow(String firstRow) {
-		this.firstRow = firstRow;
+	public void setPositionRow(String positionRow) {
+		this.positionRow = positionRow;
 	}
 	
 }

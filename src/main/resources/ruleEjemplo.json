@@ -1,49 +1,3129 @@
 {
-    "metadatos": {
-      "id": "0123456789",
-      "cliente": "PHC",
-      "fecha": "2018-09-06T16:40:23.366Z"
-    },
-    "datos": [
-      {
-        "codigo_var": "3071",
-        "sistema_var": "concept",
-        "codigo_val": "25",
-        "sistema_val": "concept",
-        "grupo": "12",
-        "contexto": "8368",
-        "fecha": "2018-09-06T16:40:23.366Z",
-        "dias": "15"
-      },
-      {
-        "codigo_var": "3072",
-        "sistema_var": "concept",
-        "codigo_val": "188",
-        "sistema_val": "concept",
-        "grupo": "12",
-        "contexto": "8368",
-        "fecha": "2018-09-06T16:40:23.366Z",
-        "dias": "83"
-      },
-      {
-        "codigo_var": "3073",
-        "sistema_var": "concept",
-        "codigo_val": "184",
-        "sistema_val": "concept",
-        "grupo": "15",
-        "contexto": "8368",
-        "fecha": "2018-09-06T16:40:23.366Z",
-        "dias": "85"
-      },
-      {
-        "codigo_var": "3074",
-        "sistema_var": "concept",
-        "codigo_val": "184",
-        "sistema_val": "concept",
-        "grupo": "16",
-        "contexto": "8368",
-        "fecha": "2018-09-06T16:40:23.366Z",
-        "dias": "85"
-      }
-    ]
-  }
+	"metadatos": {
+		"id": "0123456789",
+		"cliente": "PHC",
+		"fecha": "2018-09-06T16:40:23.366Z"
+	},
+	"datos": [
+		{	
+			"cod_var": "3071",
+			"sis_var": "concept",
+			"cod_val": "188",
+			"sis_val": "REAL",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"dias": 0,
+			"contexto": "8368",
+			"grupo": ""
+		},
+		{
+			"cod_var": "3072",
+			"sis_var": "concept",
+			"cod_val": "188",
+			"sis_val": "REAL",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8368",
+			"dias": 0
+		},
+		{
+			"cod_var": "3073",		
+			"sis_var": "concept",
+			"cod_val": "0.00",			
+			"sis_val": "INTEGER",
+			"dias": 0,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8368",
+			"grupo": ""	
+		},
+		{
+			"cod_var": "2011",		
+			"sis_var": "concept",
+			"cod_val": "4700831",			
+			"sis_val": "TEXT",
+			"dias": 0,			
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8176",
+			"grupo": ""			
+		},
+		{	
+			"cod_var": "7853",
+			"sis_var": "concept",
+			"cod_val": "3105286145",
+			"sis_val": "TEXT",
+			"dias": 0,						
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8176",
+			"grupo": ""			
+		},
+		{
+			"cod_var": "7856",			
+			"sis_var": "concept",
+			"cod_val": "prueba@prueba.com",			
+			"sis_val": "TEXT",
+			"dias": 0,			
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8176",
+			"grupo": ""			
+		},
+		{
+			"cod_var": "49279",			
+			"sis_var": "concept",
+			"cod_val": "true",			
+			"sis_val": "BOOLEAN",
+			"dias": 0,			
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8176",
+			"grupo": ""			
+		},
+		{
+			"cod_var": "49821",
+			"sis_var": "concept",
+			"cod_val": "estudiante",			
+			"sis_val": "TEXT",
+			"dias": 0,			
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "49377",
+			"grupo": ""			
+		},
+		{
+			"cod_var": "2199",			
+			"sis_var": "concept",
+			"cod_val": "2218",			
+			"sis_val": "concept",
+			"dias": 0,			
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "2002",
+			"grupo": ""	
+		},
+		{
+			"cod_var": "2015",
+			"sis_var": "concept",
+			"cod_val": "Carolina Jimenez",			
+			"sis_val": "TEXT",
+			"dias": 0,			
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8184",
+			"grupo": ""			
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "322731",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8184",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2016",
+			"sis_val": "TEXT",
+			"cod_val": "152587",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8184",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49907",
+			"sis_val": "TEXT",
+			"cod_val": "1558972310",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8184",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "48828",
+			"sis_val": "TEXT",
+			"cod_val": "",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8184",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49249",
+			"sis_val": "TEXT",
+			"cod_val": "Sin Programa",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "49248",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2133",
+			"sis_val": "TEXT",
+			"cod_val": "Consulta Médico General",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "49248",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49252",
+			"sis_val": "TEXT",
+			"cod_val": "",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "49248",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3139",
+			"sis_val": "concept",
+			"cod_val": "4249",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "3139",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "48833",
+			"sis_val": "concept",
+			"cod_val": "48834",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "3139",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49263",
+			"sis_val": "concept",
+			"cod_val": "126094",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "49262",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49264",
+			"sis_val": "concept",
+			"cod_val": "8172",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "49262",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8116",
+			"sis_val": "TEXT",
+			"cod_val": "1",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8116",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49451",
+			"sis_val": "DATE",
+			"cod_val": "06/09/2018 07:58:19",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "49451",
+			"dias": 93
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3030",
+			"sis_val": "TEXT",
+			"cod_val": "YTEST",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "3052,3029,3030",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2041",
+			"sis_val": "TEXT",
+			"cod_val": "TEST",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8086,2005,2041",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "tet",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "8395,8395,8142,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "3080",
+			"grupo": 1,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49103",
+			"grupo": 1,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "3076",
+			"grupo": 2,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 2,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Empezamos las pruebas",
+			"grupo": 2,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49135",
+			"grupo": 3,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49103",
+			"grupo": 3,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49131",
+			"grupo": 4,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49103",
+			"grupo": 4,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49121",
+			"grupo": 5,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49103",
+			"grupo": 5,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "11096",
+			"grupo": 6,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49103",
+			"grupo": 6,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49136",
+			"grupo": 7,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 7,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Suave pero...",
+			"grupo": 7,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "3104",
+			"grupo": 8,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49103",
+			"grupo": 8,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49258",
+			"grupo": 9,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49103",
+			"grupo": 9,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49259",
+			"grupo": 10,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49103",
+			"grupo": 10,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49137",
+			"grupo": 11,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49103",
+			"grupo": 11,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49260",
+			"grupo": 12,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49103",
+			"grupo": 12,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49129",
+			"grupo": 13,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49103",
+			"grupo": 13,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "3094",
+			"grupo": 14,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 14,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "314371",
+			"grupo": 15,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 15,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "8167",
+			"grupo": 16,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 16,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49999",
+			"grupo": 17,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 17,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 18,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 18,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 18,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 19,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 19,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 19,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 20,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 20,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 20,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 21,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 21,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 21,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 22,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 22,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 22,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 23,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 23,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 23,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 24,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 24,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 24,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 25,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 25,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 25,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 26,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 26,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 26,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 27,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 27,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 27,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 28,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 28,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 28,
+			"fecha": "2018-09-10T16:03:47.142Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 29,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 29,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 29,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "3094",
+			"grupo": 30,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 30,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "314371",
+			"grupo": 31,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 31,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "8167",
+			"grupo": 32,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 32,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49999",
+			"grupo": 33,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 33,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 34,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 34,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 34,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 35,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 35,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 35,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 36,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 36,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 36,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 37,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 37,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 37,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 38,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 38,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 38,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 39,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 39,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 39,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 40,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 40,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 40,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 41,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 41,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 41,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 42,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 42,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 42,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 43,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 43,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 43,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 44,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 44,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 44,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 45,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 45,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 45,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "3094",
+			"grupo": 46,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 46,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "314371",
+			"grupo": 47,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 47,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "8167",
+			"grupo": 48,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 48,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "49999",
+			"grupo": 49,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 49,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 50,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 50,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 50,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 51,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 51,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 51,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 52,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 52,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 52,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 53,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 53,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 53,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 54,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 54,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 54,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 55,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 55,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 55,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 56,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 56,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 56,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 57,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 57,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 57,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 58,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 58,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 58,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "23614",
+			"grupo": 59,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "LG ó Samsung",
+			"grupo": 59,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 59,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "237564",
+			"grupo": 60,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "jajajajajjaj",
+			"grupo": 60,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 60,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "162431",
+			"grupo": 61,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Muy delicado",
+			"grupo": 61,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 61,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3151",
+			"sis_val": "TEXT",
+			"cod_val": "dolex",
+			"grupo": 62,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,329644,3151",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "294908",
+			"sis_val": "TEXT",
+			"cod_val": "cucharada 1 al medio dia",
+			"grupo": 62,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,329644,294908",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 62,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,329644,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3151",
+			"sis_val": "TEXT",
+			"cod_val": "losartan 500 gm",
+			"grupo": 63,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,3151",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "294908",
+			"sis_val": "TEXT",
+			"cod_val": "1 pastilla cada 8 horas",
+			"grupo": 63,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,294908",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 63,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3151",
+			"sis_val": "TEXT",
+			"cod_val": "Prueba maria mayuscula inicial",
+			"grupo": 64,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,3151",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "294908",
+			"sis_val": "TEXT",
+			"cod_val": "prueba maria",
+			"grupo": 64,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,294908",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 64,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3151",
+			"sis_val": "TEXT",
+			"cod_val": "Ghg",
+			"grupo": 65,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,3151",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "294908",
+			"sis_val": "TEXT",
+			"cod_val": "Fhdh",
+			"grupo": 65,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,294908",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 65,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3151",
+			"sis_val": "TEXT",
+			"cod_val": "Prueba maria",
+			"grupo": 66,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,3151",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "294908",
+			"sis_val": "TEXT",
+			"cod_val": "Prueba maria",
+			"grupo": 66,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,294908",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 66,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3151",
+			"sis_val": "TEXT",
+			"cod_val": "Prueba m maria",
+			"grupo": 67,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,3151",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "294908",
+			"sis_val": "TEXT",
+			"cod_val": "Prueba m maria",
+			"grupo": 67,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,294908",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 67,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3151",
+			"sis_val": "TEXT",
+			"cod_val": "Prueba",
+			"grupo": 68,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,3151",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "294908",
+			"sis_val": "TEXT",
+			"cod_val": "Prueba maria",
+			"grupo": 68,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,294908",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 68,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3151",
+			"sis_val": "TEXT",
+			"cod_val": "123",
+			"grupo": 69,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,3151",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "294908",
+			"sis_val": "TEXT",
+			"cod_val": "123",
+			"grupo": 69,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,294908",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 69,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3151",
+			"sis_val": "TEXT",
+			"cod_val": "Juan",
+			"grupo": 70,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,3151",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "294908",
+			"sis_val": "TEXT",
+			"cod_val": "Juannn",
+			"grupo": 70,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,294908",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 70,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,329644,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8190,48644,48644,48636,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "239391",
+			"grupo": 71,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Alergia a las balas, al plutonio radiactivo y sobretodo a las bombas nucleares",
+			"grupo": 71,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 71,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "236121",
+			"grupo": 72,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "test 02-06-2018",
+			"grupo": 72,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "concept",
+			"cod_val": "49102",
+			"grupo": 72,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,49138,49138,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49139",
+			"sis_val": "concept",
+			"cod_val": "363057",
+			"grupo": 73,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,49139",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "Todo al pelo",
+			"grupo": 73,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 73,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49139",
+			"sis_val": "concept",
+			"cod_val": "399876",
+			"grupo": 74,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,49139",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "89898989",
+			"grupo": 74,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 74,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49139",
+			"sis_val": "concept",
+			"cod_val": "190394",
+			"grupo": 75,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,49139",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "888",
+			"grupo": 75,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 75,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49139",
+			"sis_val": "concept",
+			"cod_val": "201456",
+			"grupo": 76,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,49139",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "juan camilo",
+			"grupo": 76,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 76,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49138,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "3076",
+			"grupo": 77,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8204",
+			"grupo": 77,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "prueba",
+			"grupo": 77,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 77,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "120414",
+			"grupo": 78,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8201",
+			"grupo": 78,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "hola medusa editado",
+			"grupo": 78,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 78,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "379898",
+			"grupo": 79,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8202",
+			"grupo": 79,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "wewe",
+			"grupo": 79,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 79,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "120414",
+			"grupo": 80,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8201",
+			"grupo": 80,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "hola medusa editado",
+			"grupo": 80,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 80,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "379898",
+			"grupo": 81,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8202",
+			"grupo": 81,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "wewe",
+			"grupo": 81,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 81,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "120414",
+			"grupo": 82,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8201",
+			"grupo": 82,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "hola medusa editado",
+			"grupo": 82,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 82,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "379898",
+			"grupo": 83,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8202",
+			"grupo": 83,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "wewe",
+			"grupo": 83,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 83,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "120414",
+			"grupo": 84,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8201",
+			"grupo": 84,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "hola medusa editado",
+			"grupo": 84,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 84,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "379898",
+			"grupo": 85,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8202",
+			"grupo": 85,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "wewe",
+			"grupo": 85,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 85,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "120414",
+			"grupo": 86,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8201",
+			"grupo": 86,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "hola medusa editado",
+			"grupo": 86,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 86,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "379898",
+			"grupo": 87,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8202",
+			"grupo": 87,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "wewe",
+			"grupo": 87,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 87,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "120414",
+			"grupo": 88,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8201",
+			"grupo": 88,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "hola medusa editado",
+			"grupo": 88,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 88,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49100",
+			"sis_val": "concept",
+			"cod_val": "379898",
+			"grupo": 89,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49100",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8200",
+			"sis_val": "concept",
+			"cod_val": "8202",
+			"grupo": 89,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,8200",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2270",
+			"sis_val": "TEXT",
+			"cod_val": "wewe",
+			"grupo": 89,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,2270",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49101",
+			"sis_val": "BOOLEAN",
+			"cod_val": true,
+			"grupo": 89,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,49099,49101",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49152",
+			"sis_val": "concept",
+			"cod_val": "2997",
+			"grupo": 90,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,8292,8293,8274,49152",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49153",
+			"sis_val": "concept",
+			"cod_val": "2997",
+			"grupo": 90,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,8292,8293,8274,49153",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8272",
+			"sis_val": "TEXT",
+			"cod_val": "Fumador",
+			"grupo": 90,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,8292,8293,8274,8272",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8284",
+			"sis_val": "REAL",
+			"cod_val": 5,
+			"grupo": 90,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,8292,8293,8274,8284",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "8273",
+			"sis_val": "INTEGER",
+			"cod_val": 90,
+			"grupo": 90,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,8292,8293,8274,8273",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "276064",
+			"sis_val": "concept",
+			"cod_val": "256212",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "48644,8206,8292,8293,49434,276064",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "29027",
+			"sis_val": "concept",
+			"cod_val": "29028",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "29022,8255,29027",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "28672",
+			"sis_val": "concept",
+			"cod_val": "2998",
+			"grupo": 91,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "29020,29019,28672",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "28673",
+			"sis_val": "concept",
+			"cod_val": "2997",
+			"grupo": 91,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "29020,29019,28673",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "28674",
+			"sis_val": "concept",
+			"cod_val": "2998",
+			"grupo": 91,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "29020,29019,28674",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "28675",
+			"sis_val": "concept",
+			"cod_val": "2997",
+			"grupo": 91,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "29020,29019,28675",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "28676",
+			"sis_val": "TEXT",
+			"cod_val": "Consumo de riesgo",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "29020,29021,28676",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "242980",
+			"sis_val": "concept",
+			"cod_val": "2298",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "49435,242980",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "24106",
+			"sis_val": "concept",
+			"cod_val": "7876",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "24120,24106",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49154",
+			"sis_val": "TEXT",
+			"cod_val": "La leucemia es un grupo de enfermedades malignas de la médula ósea (cáncer hematológico1¿) que provoca un aumento descontrolado de leucocitos en la misma. Sin embargo, en algunos tipos de leucemias también pueden afectarse cualquiera de los precursores de las diferentes líneas celulares de la médula ósea, como los precursores mieloides, monocíticos, eritroides o megacariocíticos.2¿",
+			"grupo": "",
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8278,49154",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3072",
+			"sis_val": "REAL",
+			"cod_val": "188",
+			"grupo": 92,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8368,8368,3072",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3073",
+			"sis_val": "INTEGER",
+			"cod_val": "0.00",
+			"grupo": 92,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8368,8368,3073",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49472",
+			"sis_val": "TEXT",
+			"cod_val": "Anormal",
+			"grupo": 93,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8386,8456,49472",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49473",
+			"sis_val": "TEXT",
+			"cod_val": "Anormal",
+			"grupo": 93,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8386,8456,49473",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49253",
+			"sis_val": "concept",
+			"cod_val": "49254",
+			"grupo": 94,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8386,49159,49253",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49475",
+			"sis_val": "TEXT",
+			"cod_val": "Anormal",
+			"grupo": 94,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8386,49159,49475",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49249",
+			"sis_val": "TEXT",
+			"cod_val": "Sin Programa",
+			"grupo": 95,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8386,49248,49248,49248,49249",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "2133",
+			"sis_val": "TEXT",
+			"cod_val": "Consulta Médico General",
+			"grupo": 95,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8386,49248,49248,49248,2133",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "3139",
+			"sis_val": "concept",
+			"cod_val": "4249",
+			"grupo": 96,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8386,2008,3139,3139",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "48833",
+			"sis_val": "concept",
+			"cod_val": "48834",
+			"grupo": 96,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8386,2008,3139,48833",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49263",
+			"sis_val": "concept",
+			"cod_val": "126094",
+			"grupo": 97,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8386,2008,49261,49262,49263",
+			"dias": 0
+		},
+		{
+			"sis_var": "concept",
+			"cod_var": "49264",
+			"sis_val": "concept",
+			"cod_val": "8172",
+			"grupo": 97,
+			"fecha": "2018-09-10T16:03:47.143Z",
+			"contexto": "8387,8387,8386,2008,49261,49262,49264",
+			"dias": 0
+		}
+	]
+}
